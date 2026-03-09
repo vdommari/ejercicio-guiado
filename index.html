@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -8,13 +9,25 @@
   <body>
     <nav>
       <ul>
-        <li>Estructura del día</li>
-        <li>Equipo</li>
-        <li>Horario</li>
+        <li>
+          <a href="#structure">Estructura del día</a>
+        </li>
+        <li>
+          <a href="#team">Equipo</a>
+        </li>
+        <li>
+          <a href="#schedule">Horario</a>
+        </li>
       </ul>
     </nav>
     <header>
-      <h1>IronSkydive</h1>
+      <h1>
+        <img
+          src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"
+          alt="Logotipo de la IronSkydive"
+        />
+        IronSkydive
+      </h1>
       <h2>Que comience el viaje</h2>
       <aside>
         <em> "The best experience of our lives" </em> <br />
@@ -25,6 +38,7 @@
       <article id="section1-article1">
         <h3>Hola</h3>
         <p>Bienvenido a IronSkydive, la mejor aventura que jamás vivirás</p>
+        <a href="#">Más información</a>
       </article>
       <article id="section1-article2">
         <h3>Sobre nosotros</h3>
@@ -32,6 +46,7 @@
           Nos gusta mucho programar páginas web, pero también nos gusta hacer
           deportes extremos
         </p>
+        <a href="#"> Ver video</a>
       </article>
       <article id="section1-article3">
         <h3>¿Quieres unirte?</h3>
@@ -39,12 +54,17 @@
           Únete a nuestro programa de entrenamiento para ponerte en forma
           mientras aprendes
         </p>
+        <a href="#"> Registrarse </a>
       </article>
     </section>
     <section id="section2">
       <h3>¿Cómo estructuramos el día?</h3>
       <div>
         <article id="section2-article1">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png"
+            alt="Formación"
+          />
           <h4>1. Entrenamiento</h4>
           <p>
             Nosotros enseñamos todas las cosas necesarias para saltar desde un
@@ -52,6 +72,10 @@
           </p>
         </article>
         <article id="section2-article2">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png"
+            alt="Silueta"
+          />
           <h4>2. Preparación</h4>
           <p>
             Tu ya estás preparado, solo necesitas el traje y un paracaídas.
@@ -59,6 +83,10 @@
           </p>
         </article>
         <article id="section2-article3">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png"
+            alt="Avión"
+          />
           <h4>3. Vuelo</h4>
           <p>
             Tu ya estás preparado y el avión está esperándonos en el hangar.
@@ -66,6 +94,10 @@
           </p>
         </article>
         <article id="section2-article4">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png"
+            alt="Paracaídas"
+          />
           <h4>4. ¡Salto!</h4>
           <p>Solo nos queda un paso más. ¡Salta!</p>
         </article>
@@ -74,10 +106,29 @@
     <section id="section3">
       <h3>Equipo</h3>
       <p>Nuestro equipo tiene 75 años de experiencia</p>
+      <hr />
       <div>
-        <article id="section3-article1">Miembro 1</article>
-        <article id="section3-article2">Miembro 2</article>
-        <article id="section3-article3">Miembro 3</article>
+        <article id="section3-article1">
+          <h4>Harold Rothstein</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg"
+            alt="Harold Rothstein"
+          />
+        </article>
+        <article id="section3-article2">
+          <h4>Susan Phillips</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg"
+            alt="Susan Phillips"
+          />
+        </article>
+        <article id="section3-article3">
+          <h4>Taylor Roberts</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg"
+            alt="Taylor Roberts"
+          />
+        </article>
       </div>
     </section>
     <section id="section4">
@@ -129,12 +180,26 @@
     <footer>
       <section>
         <h5>Información de contacto</h5>
-        <address> IronSkydive 33 Rue la Fayette, 75009 París, Francia +33 (0) 619 193 088 </address>
-        <h5> Síguenos </h5>
+        <address>
+          <em
+            >IronSkydive <br />
+            33 Rue la Fayette,<br />
+            75009 París,<br />
+            Francia<br />
+            +33 (0) 619 193 088</em
+          >
+        </address>
+        <h5>Síguenos</h5>
         <ul>
-            <li> Twitter </li>
-            <li> Facebook </li>
-            <li> Instagram </li>
+          <li>
+            <a href="#" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Instagram</a>
+          </li>
         </ul>
       </section>
     </footer>
