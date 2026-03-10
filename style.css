@@ -7,6 +7,7 @@
   font-size: 10px;
   line-height: 3.5em;
   font-weight: 300;
+  color: rgb(0, 0, 0);
 }
 h1,
 h2,
@@ -46,7 +47,36 @@ h4 {
 h5 {
   font-size: 1.2em;
 }
-h3, h4, h5 {
-    line-height:1em;
+h3,
+h4,
+h5 {
+  line-height: 1em;
 }
 
+.nav-bar {
+  background-color: rgb(25, 33, 41);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+}
+
+.class-header {
+  position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.class-header h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: #020819 8px -20px 9px;
+}
+
+.class-quote {
+  font-size: 2.5em;
+}
+
+.class-quote em{
+  font-size: 2.5em;
+}
