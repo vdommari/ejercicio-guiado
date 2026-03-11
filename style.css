@@ -50,6 +50,16 @@ header {
 }
 .nav-bar {
   background-color: rgb(25, 33, 41);
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.nav-bar-ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav-bar-ul li {
+  list-style-type: none;
+  text-align: center;
 }
 .nav-bar a {
   color: white;
@@ -57,12 +67,11 @@ header {
   font-size: 2em;
 }
 
-/* deberiamos poner
 .class-header {
   height: 650px;
+  padding-top: 50px;
 }
-  pero hace la imagen muy grande*/
-.class-header h2 {
+  .class-header h2 {
   color: white;
   text-shadow: #020819 8px -20px 9px;
 }
