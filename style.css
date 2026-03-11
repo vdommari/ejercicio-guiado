@@ -4,6 +4,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Roboto";
   font-size: 10px;
   line-height: 3.5em;
@@ -45,16 +48,24 @@ h5 {
   margin-bottom: 0;
 }
 
-header {
+.class-header {
   background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 650px;
+  padding-top: 50px;
+  position: relative;
 }
+
+.class-header h2 {
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+}
+
 .nav-bar {
   background-color: rgb(25, 33, 41);
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding : 14px 0;
 }
 .nav-bar-ul {
   width: 1200px;
@@ -67,26 +78,14 @@ header {
   text-align: center;
 }
 .nav-bar a {
+  font-size: 2em;
   color: white;
   text-decoration: none;
-  font-size: 2em;
+
 }
 
-.class-header {
-  height: 650px;
-  padding-top: 50px;
-  position: relative;
-}
-.class-header h2 {
-  color: white;
-  text-shadow: #020819 8px -20px 9px;
-}
-/* el padding no se ve bien */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 75px 0;
-}
+
+
 
 .class-quote {
   font-size: 2.5em;
@@ -147,10 +146,15 @@ header {
   color: rgb(67, 163, 230);
   text-decoration: none;
 }
-/*añadimos padding para centrar rrss */
+/*añadimos padding para centrar rrss
+*/
+/*
+quitamos padding por que lo destrozaba
+*/
 .class-footer ul {
   list-style: none;
-  padding-right: 50px;
+  padding: 0;
+  /*padding-right: 50px;*/
 }
 
 .schedule-table {
@@ -167,10 +171,45 @@ td {
   height: 375px;
   width: 60%;
 }
+
+.slot-form-container {
+  width: 40%;
+  margin: 18px auto 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.slot-form-container label {
+  line-height: 15px;
+  margin: 5px;
+}
+
+.slot-form-container input,
+select {
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+
+.slot-form-container button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 15px;
+  margin-top: 15px;
+}
 #general-information {
   display: flex;
   justify-content: space-evenly;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
 #general-information .container {
   display: flex;
   flex-direction: column;
@@ -183,11 +222,16 @@ td {
   flex-direction: row;
   flex-wrap: wrap;
 }
-#team div {
+
+#team {
   padding: 75px 0;
   margin: 0 auto;
+}
+
+#team div {
   display: flex;
   justify-content: space-evenly;
+  /*   flex-direction: row; */
 }
 #team > div > article {
   display: flex;
@@ -195,19 +239,22 @@ td {
   flex-direction: column;
   align-items: center;
 }
-
+/* esto nos lo hemos inventado muchisimo
 #team h3 {
   padding-top: 75px;
 }
+  */
 
 #team p {
   width: 60%;
   margin: 10px auto;
 }
+
 #team hr {
   margin: 20px auto 30;
   width: 40%;
 }
+
 #team .section-text {
   font-size: 1.9em;
   text-align: center;
