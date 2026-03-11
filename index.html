@@ -176,6 +176,36 @@
         </tbody>
       </table>
       <h3>Programar una franja horaria</h3>
+<form class="slot-form" action="/register" method="post">
+  <div class="slot-form-comtainer">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Introduce tu email">
+  </div>
+
+  <div class="slot-form-comtainer">
+    <label for="participants">Participantes</label>
+    <input id="participants" type="number" placeholder="Número de participantes">
+  </div>
+
+  <div class="slot-form-comtainer">
+    <label for="date">Fecha</label>
+    <input id="date" type="date">
+  </div>
+
+  <div class="slot-form-comtainer">
+    <label for="time">Duración</label>
+    <select name="time" id="time">
+      <option value="early">9:00 - 11:00</option>
+      <option value="mid">12:00 - 14:00</option>
+      <option value="late">15:00-17:00</option>
+    </select>
+  </div>
+
+  <div class="slot-form-comtainer">
+    <input type="submit" value="Reservar tu franja">
+  </div>
+
+</form>
     </section>
     <footer class="dark-background class-footer">
       <section>
